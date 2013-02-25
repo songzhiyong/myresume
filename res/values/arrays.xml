@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="entries_list_preference">
+        <item>Alpha Option 01</item>
+        <item>Beta Option 02</item>
+        <item>Charlie Option 03</item>
+    </string-array>
+    <string-array name="entryvalues_list_preference">
+        <item>alpha</item>
+        <item>beta</item>
+        <item>charlie</item>
+    </string-array>
+    <string-array name="items">
+        <item>基本信息</item>
+        <item>个人评价</item>
+    </string-array>
+    <string-array name="basic_infos">
+        <item>姓名：宋志勇</item>
+        <item>性别：男</item>
+        <item>学历：本科</item>
+        <item>专业：电子信息工程</item>
+        <item>民族：汉</item>
+        <item>籍贯：山东省曲阜市</item>
+        <item>英语：CET-6(优秀)</item>
+        <item>毕业院校：临沂大学</item>
+        <item>出生年月：1989.11.21</item>
+        <item>E-mail：</item>
+        <item>songzhiyong1121@gmail</item>
+        <item>.com</item>
+    </string-array>
+    <string-array name="evaluation">
+        <item>近一年Android开发经验</item>
+        <item>熟练Android的诸多细节处理</item>
+        <item>熟悉Android NDK/JNI开发</item>
+        <item>努力补充框架层和底层的知识</item>
+        <item>热爱技术，关注科技动态</item>
+        <item>喜欢打篮球、听音乐和看电影</item>
+    </string-array>
+    <string-array name="skills">
+        <item>熟练掌握Android基础知识</item>
+        <item>熟悉流行的Android开源框架</item>
+        <item>熟练掌握XMPP协议扩展开发</item>
+        <item>熟悉Android NDK/JNI开发</item>
+        <item>有GIS(google map,高德)开发经验</item>
+        <item>熟悉微信微博第三方拓展</item>
+        <item>熟悉java web开发</item>
+        <item>了解php语言、wamp环境搭建开发</item>
+        <item>了解linux基本使用和常用指令</item>
+        <item>可进行简单shell、python编程</item>
+    </string-array>
+
+</resources>
