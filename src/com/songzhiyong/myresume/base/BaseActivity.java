@@ -14,6 +14,12 @@ import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.app.SlidingFragmentActivity;
 import com.songzhiyong.myresume.LeftFragment;
 import com.songzhiyong.myresume.R;
+/**
+ * SlidingFragmentActivity基本类
+ * 
+ * @author SongZhiyong
+ * 
+ */
 public class BaseActivity extends SlidingFragmentActivity {
 	private int mTitleRes;
 	protected ListFragment mFrag;
@@ -23,10 +29,9 @@ public class BaseActivity extends SlidingFragmentActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setTitle(mTitleRes);
-		// set the Behind View
 		setBehindContentView(R.layout.menu_frame);
 		FragmentTransaction t = this.getSupportFragmentManager().beginTransaction();
-		mFrag = new LeftFragment();
+		mFrag = new LeftFragment();// 左侧Fragment
 		t.replace(R.id.menu_frame, mFrag);
 		t.commit();
 		// customize the SlidingMenu
@@ -52,25 +57,4 @@ public class BaseActivity extends SlidingFragmentActivity {
 	public boolean onCreateOptionsMenu(Menu menu) {
 		return true;
 	}
-	public class BasePagerAdapter extends FragmentPagerAdapter {
-		private List<Fragment> mFragments = new ArrayList<Fragment>();
-		private ViewPager mPager;
-		public BasePagerAdapter(FragmentManager fm, ViewPager vp) {
-			super(fm);
-			mPager = vp;
-			mPager.setAdapter(this);
-			for (int i = 0; i < 3; i++) {
-				addTab(new SampleListFragment());
-			}
-		}
-		public void addTab(Fragment frag) {
-			mFragments.add(frag);
-		}
-		public Fragment getItem(int position) {
-			return mFragments.get(position);
-		}
-		public int getCount() {
-			return mFragments.size();
-		}
-	}
-}
+}// /:~

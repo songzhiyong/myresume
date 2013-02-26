@@ -9,7 +9,7 @@ import com.slidingmenu.lib.SlidingMenu;
 import com.slidingmenu.lib.SlidingMenu.CanvasTransformer;
 import com.songzhiyong.myresume.base.BaseActivity;
 /**
- * My resume main activity
+ * My resume main activity 简历
  * 
  * @author SongZhiyong
  * 
@@ -18,7 +18,7 @@ public class MainActivity extends BaseActivity implements ActionBar.OnNavigation
 	String[] mItems;// 个人信息条目
 	private CanvasTransformer mTransformer;
 	public MainActivity() {
-		super(R.string.resume_main);
+		super(R.string.resume_main);// 设置上方标题
 		mTransformer = new CanvasTransformer() {
 			public void transformCanvas(Canvas canvas, float percentOpen) {
 				float scale = (float) (percentOpen * 0.25 + 0.75);
