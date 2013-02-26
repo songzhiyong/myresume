@@ -4,6 +4,12 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationSet;
 import android.view.animation.LayoutAnimationController;
 import android.view.animation.TranslateAnimation;
+/**
+ * API Demos中含有的listView加载动画
+ * 
+ * @author SongZhiyong
+ * 
+ */
 public class AnimationUtil {
 	// ListView item加载时的动画
 	public static LayoutAnimationController getAnimationController() {

@@ -1,5 +1,4 @@
 package com.songzhiyong.myresume;
-import com.songzhiyong.myresume.utils.AnimationUtil;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.v4.app.ListFragment;
@@ -9,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+import com.songzhiyong.myresume.utils.AnimationUtil;
 /**
  * 创建人：SongZhiyong
  * 创建时间：2013-2-25
@@ -37,10 +37,8 @@ public class LeftFragment extends ListFragment {
 	}
 	private class SampleItem {
 		public String tag;
-		public int iconRes;
 		public SampleItem(String tag, int iconRes) {
 			this.tag = tag;
-			this.iconRes = iconRes;
 		}
 	}
 	public class SampleAdapter extends ArrayAdapter<SampleItem> {
