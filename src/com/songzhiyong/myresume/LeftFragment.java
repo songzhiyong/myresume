@@ -14,6 +14,8 @@ import com.songzhiyong.myresume.utils.AnimationUtil;
  * 创建时间：2013-2-25
  */
 /**
+ * 左侧Fragment
+ * 
  * @author SongZhiyong
  * 
  */
