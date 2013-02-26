@@ -1,4 +1,4 @@
-myresume
+my resume
 ========
 
 use the opensource slidingmenu widget
