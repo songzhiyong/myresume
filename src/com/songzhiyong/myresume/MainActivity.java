@@ -58,7 +58,7 @@ public class MainActivity extends BaseActivity implements ActionBar.OnNavigation
 			findViewById(R.id.layout_basic).setVisibility(View.VISIBLE);
 			findViewById(R.id.layout_evaluation).setVisibility(View.GONE);
 			break;
-		case 1: //显示个人评价
+		case 1://显示个人评价
 			findViewById(R.id.layout_basic).setVisibility(View.GONE);
 			findViewById(R.id.layout_evaluation).setVisibility(View.VISIBLE);
 			break;
