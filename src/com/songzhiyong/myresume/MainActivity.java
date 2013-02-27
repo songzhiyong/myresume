@@ -16,7 +16,7 @@ import com.songzhiyong.myresume.base.BaseActivity;
  */
 public class MainActivity extends BaseActivity implements ActionBar.OnNavigationListener {
 	String[] mItems;// 个人信息条目
-	private CanvasTransformer mTransformer;
+	private CanvasTransformer mTransformer; //slidingMenu滑入动画
 	public MainActivity() {
 		super(R.string.resume_main);// 设置上方标题
 		mTransformer = new CanvasTransformer() {
@@ -54,11 +54,11 @@ public class MainActivity extends BaseActivity implements ActionBar.OnNavigation
 	}
 	public boolean onNavigationItemSelected(int itemPosition, long itemId) {
 		switch (itemPosition) {
-		case 0:
+		case 0://显示个人基本信息
 			findViewById(R.id.layout_basic).setVisibility(View.VISIBLE);
 			findViewById(R.id.layout_evaluation).setVisibility(View.GONE);
 			break;
-		case 1:
+		case 1: //显示个人评价
 			findViewById(R.id.layout_basic).setVisibility(View.GONE);
 			findViewById(R.id.layout_evaluation).setVisibility(View.VISIBLE);
 			break;

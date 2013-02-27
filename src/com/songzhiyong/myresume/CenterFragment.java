@@ -50,7 +50,7 @@ public class CenterFragment extends Fragment {
 		super.onResume();
 	}
 	private class SampleItem {
-		public String tag;
+		public String tag;  
 		public int iconRes;
 		public SampleItem(String tag, int iconRes) {
 			this.tag = tag;
